@@ -1,0 +1,36 @@
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(128, 182, 207);
+  display: flex;
+  align-items: center;
+}
+nav li > ul {
+  display: none;
+}
+nav li:hover > ul {
+  display: block;
+  position: absolute;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 24px 26px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #28a9f3;
+}
+
+h1 {
+color: rgb(7, 56, 65);
+margin-left: 55px;
+padding-right: 160px;
+}
