@@ -1,0 +1,10 @@
+button {
+    background-color: #e8eeeb;
+    color:#4c8f7a;
+    margin: 1vw;
+    border: solid 0.8px;
+    padding: 8px;
+}
+    span{
+    color: #4c8f7a;
+} 
