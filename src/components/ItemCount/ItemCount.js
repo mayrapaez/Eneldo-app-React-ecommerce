@@ -4,10 +4,11 @@ import Button from './button/Button';
 import Add from './add/Add';
 
 const style = {
-    margin: '100px auto',
+    margin: '100px 552px',
     widht: 300,
     height: 100,
     backgroundColor: 'grey',
+    
 }
 
 const upper = {

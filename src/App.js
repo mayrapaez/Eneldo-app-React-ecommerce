@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import swal from "sweetalert";
 import NavbarComponent from './components/NavBarComponent/NavBarComponent';
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
-import ItemCount from "./components/Contador/ItemCount";
+import ItemCount from "./components/ItemCount/ItemCount";
 
 
 const App = () => {
