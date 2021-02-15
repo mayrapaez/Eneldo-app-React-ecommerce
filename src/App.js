@@ -4,29 +4,21 @@ import swal from "sweetalert";
 import NavbarComponent from './components/NavBarComponent/NavBarComponent';
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
 import ItemCount from "./components/ItemCount/ItemCount";
+import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
+import {BrowserRouter, Switch, Route, Router} from 'react-router-dom';
 
 
 const App = () => {
 
-  let stock = 20
 
-  const handleAdd = (counter) => {
-      return () => {
-          if(stock <= 0){
-              swal('No hay stock')
-          }else{
-              swal(`Se van a agregar ${counter} items`)
-          }
-      }
-  }
-  
+
+  function handleAdd(counter) { } 
   return (
       <>
           <NavbarComponent />
           <ItemListContainer greeting = {'Bienvenidos a ENELDO Mercado Natural'}/>          
-          <div className="App">
-              <ItemCount onAdd = {handleAdd} stock = {stock} inicial = {0}/>
-          </div>
+          <ItemCount onAdd = {handleAdd} stock = {20} inicial = {0}/>
+          <ItemDetailContainer />
       </>
   );
 }

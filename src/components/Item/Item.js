@@ -1,5 +1,6 @@
 import ItemCountComponent from '../ItemCount/ItemCount';
 import swal from "sweetalert";
+import './style.css';
 
 const ItemComponent = ({product}) => {
     const onAdd = () => {
