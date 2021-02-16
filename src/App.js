@@ -6,7 +6,6 @@ import NavbarComponent from './components/NavBarComponent/NavBarComponent';
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
 // import ItemCount from "./components/ItemCount/ItemCount";
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
-import DetalleComponent from '././Mocks/ProductList'
 import  {BrowserRouter, Switch, Route} from 'react-router-dom';
 
 

@@ -8,12 +8,12 @@ const ItemDetailComponent = ({ item }) => {
     const onAdd = () => {
         swal("Producto agregado exitosamente");
     }
-    let { name, price, detail, stock } = product;
+
     return (
     <div className="cardDetail">
         <div key={item.id}>
         <h3>{item.name}</h3>
-        <img src="" alt=""/> <img/></div>
+        </div>
         <div className="descripcion">
         <p>{item.detail}</p>
         <span>{item.price}</span>
