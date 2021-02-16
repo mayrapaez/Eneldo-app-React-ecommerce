@@ -2,23 +2,24 @@ import ItemCount from "../ItemCount/ItemCount";
 import swal from "sweetalert";
 
 
+
 const ItemDetailComponent = ({ item }) => {
-    // console.log(item);
+    
     const onAdd = () => {
         swal("Producto agregado exitosamente");
     }
-
+    let { name, price, detail, stock } = product;
     return (
     <div className="cardDetail">
-        <div>
+        <div key={item.id}>
         <h3>{item.name}</h3>
-        <img src="item.img" alt=""/> <img/></div>
+        <img src="" alt=""/> <img/></div>
         <div className="descripcion">
         <p>{item.detail}</p>
         <span>{item.price}</span>
         <div>
             <ItemCount stock ={item.stock}
-            initial = {1}
+            initial = {0}
             onAdd = {onAdd} />
         </div>
         </div>

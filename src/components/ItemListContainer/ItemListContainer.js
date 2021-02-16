@@ -12,7 +12,7 @@ const ItemListContainer = ({greeting}) => {
         const myPromise = new Promise((res, rej) => {
             setTimeout(() => 
             res(productList), 3000);
-            console.log(productList, products);
+            // console.log(productList, products);
             
         });
 
