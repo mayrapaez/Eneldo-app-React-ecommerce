@@ -1,31 +1,26 @@
-import ItemCount from "../ItemCount/ItemCount";
+import ItemCount from "../ItemCount/ItemCountDos";
 import swal from "sweetalert";
 
 
-
 const ItemDetailComponent = ({ item }) => {
-    
-    const onAdd = () => {
-        swal("Producto agregado exitosamente");
-    }
+  const onAdd = () => {
+    swal("Producto agregado exitosamente");
+  };
 
-    return (
+  return (
     <div className="cardDetail">
-        <div key={item.id}>
+      <div key={item.id}>
         <h3>{item.name}</h3>
-        </div>
-        <div className="descripcion">
+      </div>
+      <div className="descripcion">
         <p>{item.detail}</p>
-        <span>{item.price}</span>
+        <span>${item.price}</span>
         <div>
-            <ItemCount stock ={item.stock}
-            initial = {0}
-            onAdd = {onAdd} />
+          <ItemCount stock={item.stock} initial={0} onAdd={onAdd} />
         </div>
-        </div>
+      </div>
     </div>
-    );
+  );
 };
 
 export default ItemDetailComponent;
-
