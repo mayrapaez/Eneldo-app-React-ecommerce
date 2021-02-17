@@ -5,7 +5,7 @@ import "./styles.css";
 const ItemCountComponent = ({ stock, initial, onAdd }) => {
   const [contador, setContador] = useState(initial);
 
-  const onMinus = () => {
+  const decrementar = () => {
     if (contador > 1) {
       setContador(contador - 1);
     } else {
@@ -13,7 +13,7 @@ const ItemCountComponent = ({ stock, initial, onAdd }) => {
     }
   };
 
-  const onPlus = () => {
+  const incrementar = () => {
     if (contador < stock) {
       setContador(contador + 1);
     } else {
@@ -23,9 +23,9 @@ const ItemCountComponent = ({ stock, initial, onAdd }) => {
 
   return (
     <>
-      <button onClick={onMinus}>-</button>
+      <button onClick={decrementar}>-</button>
       <span>{contador} </span>
-      <button onClick={onPlus}>+</button>
+      <button onClick={incrementar}>+</button>
       <div>
         <button onClick={onAdd}>COMPRAR</button>
       </div>
