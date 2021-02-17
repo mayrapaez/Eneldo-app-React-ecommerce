@@ -1,30 +1,28 @@
 import React, { useState, useEffect } from "react";
-import ItemDetailComponent from "../ItemDetail/ItemDetail";
-import productList from "../../Mocks/ProductList";
 import { useParams } from "react-router-dom";
+import ItemDetailComponent from "../ItemDetail/ItemDetail";
+import ProductList from "../../Mocks/ProductList";
+
 
 const ItemDetailContainer = () => {
-  const { id } = useParams();
-  const [item, setItem] = useState({});
-
+    const { id } = useParams();
+  const [product, setProduct] = useState([]);
+  
+  console.log(id);
   useEffect(() => {
-    const itemsPromise = new Promise((res, rej) => {
-      setTimeout(() => {
-        res(productList);
-      }, 1000);
+
+    const PromesaDetail = new Promise((resolve, reject) => {
+        setTimeout(() => resolve(ProductList.find(prod => prod.id === id), 3000));
     });
 
-    itemsPromise.then((resp) => {
-      let item = resp.find((prod) => (id) => {
-        return prod.id === id;
-      });
-      setItem(item);
+    PromesaDetail.then((result) => {
+        setProduct(result);
     });
-  }, []);
+}, [id]);
 
   return (
     <>
-      <ItemDetailComponent item={item} />
+      {product && <ItemDetailComponent product={product}/> }
     </>
   );
 };

@@ -9,19 +9,17 @@ const ItemComponent = ({ product }) => {
 
   return (
     <div className="cardItem">
-      <div>
-        <Link to={"/product/${product.category}"}>
-          <h2>{product.categoty}</h2>
-        </Link>
-      </div>
+      <div key={product.id}>
+      <h2>{product.category}</h2>
       <h3>{product.name}</h3>
       <b>${product.price}</b>
       <div>
         <ItemCountComponent stock={product.stock} initial={1} onAdd={onAdd} />
       </div>
-      <Link to={"/product/${product.id}"}>
+      <Link to={`/product/${product.id}`}>
         <button>VER MAS</button>
       </Link>
+    </div>
     </div>
   );
 };

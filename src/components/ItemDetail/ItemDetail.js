@@ -1,22 +1,21 @@
 import ItemCount from "../ItemCount/ItemCountDos";
 import swal from "sweetalert";
 
-
-const ItemDetailComponent = ({ item }) => {
+const ItemDetailComponent = ({ product }) => {
   const onAdd = () => {
     swal("Producto agregado exitosamente");
   };
 
   return (
     <div className="cardDetail">
-      <div key={item.id}>
-        <h3>{item.name}</h3>
+      <div key={product.id}>
+        <h3>{product.name}</h3>
       </div>
       <div className="descripcion">
-        <p>{item.detail}</p>
-        <span>${item.price}</span>
+        <p>{product.detail}</p>
+        <span>${product.price}</span>
         <div>
-          <ItemCount stock={item.stock} initial={0} onAdd={onAdd} />
+          <ItemCount stock={product.stock} initial={0} onAdd={onAdd} />
         </div>
       </div>
     </div>
