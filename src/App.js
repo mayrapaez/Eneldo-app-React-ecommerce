@@ -5,6 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import NavbarComponent from "./components/NavBarComponent/NavBarComponent";
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
 import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer";
+import Cart from "./components/Cart/Cart"
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 const App = () => {
@@ -17,11 +18,12 @@ const App = () => {
           <Switch>
           <Route exact path="/" component={ItemListContainer}>
           <ItemListContainer greeting={`Bienvenidos a ENELDO Mercado Natural`}/>
-            </Route>    
+          </Route>    
           <Route  path="/product/categorias/:category" component={ItemListContainer}/>
             
           <Route  path="/product/:id" component={ItemDetailContainer}/>
-
+          
+          <Route exact path="/cart" component={Cart}/>
           </Switch>
 
         </BrowserRouter>
