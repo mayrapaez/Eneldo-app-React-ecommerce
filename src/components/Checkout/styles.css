@@ -1,0 +1,62 @@
+.checkoutFormContainer {
+    color: #532e1c;
+    font-family: 'Quicksand', sans-serif;
+}
+.checkoutFormContainer h5 {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.checkoutFormContainer .checkoutButtonContainer {
+    display: flex;
+    justify-content: flex-end;
+}
+.checkoutFormContainer .checkoutButtonContainer .backButton {
+    color: #532e1c;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    border: 1px solid #532e1c;
+    border-radius: 0.3rem;
+    width: 10rem;
+    transition: 0.15s;
+}
+.checkoutFormContainer .checkoutButtonContainer .backButton:hover {
+    background-color: #532e1c;
+    color: #fff;
+}
+.checkoutFormContainer .checkoutButtonContainer .continueButton {
+    background-color: #bf9b77;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    border: 1px solid #bf9b77;
+    border-radius: 0.3rem;
+    width: 10rem;
+    transition: 0.15s;
+}
+.checkoutFormContainer .checkoutButtonContainer .continueButton:hover {
+    background-color: #e34724;
+    color: #fff;
+    border-color: #e34724;
+}
+.checkoutCongratsContainer {
+    color: #532e1c;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    line-height: 2rem;
+}
+.checkoutCongratsContainer h5 {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.checkoutCongratsContainer #order {
+    font-weight: bold;
+}
+.checkoutCongratsContainer #email {
+    color: #0091a1;
+    text-decoration: underline;
+}
+.checkoutCongratsContainer #email:hover {
+    color: #e34724;
+}

@@ -1,45 +1,22 @@
-import { Card, Button, FormControl, InputGroup,} from "react-bootstrap";
+
+// import React, {useContext} from 'react'
+// import { contexto } from "../../context/CardContext";
 
 
+// const CartItem = ({item})=> {
+//     const {cantidad, producto, subtotal} = item
+//     const {removeItem} = useContext(contexto)
+   
+//     return (
+//         <div className="productoCart">
+//             <h4>{producto.title}</h4>
+//             <img src={producto.pictureURL} alt={producto.title} height="70px" width="70px"></img>
+//             <p>Precio: ${producto.price}</p>
+//             <p>Cantidad: {cantidad}</p>
+//             <p>Subtotal: ${subtotal}</p>
+//             <button onClick={()=>removeItem(producto.id, cantidad)}>Quitar del carrito</button>
+//         </div>
+//     )
+// }
 
-
-const CardCounter = (props) => {
-
-    return(
-
-    <Card style={{ width: '18rem' }}>
-       
-        <Card.Body>
-            <Card.Title><p>{props.product}</p> </Card.Title>
-            <Card.Text>
-
-              <p>{props.productDescription}</p> 
-
-            </Card.Text>
-
-            <Card.Text>
-                <p>{props.price}</p>
-            </Card.Text>
-            <InputGroup>
-        <FormControl
-            placeholder=""
-            aria-label=""
-            aria-describedby="basic-addon2"
-            />
-            <InputGroup.Append>
-                <Button variant="outline-secondary">+</Button>
-                <Button variant="outline-secondary">-</Button>
-            </InputGroup.Append>
-            </InputGroup>
-            
-            <Button variant="primary">Comprar</Button>
-        </Card.Body>
-    </Card>
-
-    )
-
-
-
-}
-
-export default CardCounter;
+// export default CartItem

@@ -1,4 +1,42 @@
-button {
+b {
+    color: #532e1c;
+    font-family: 'Quicksand', sans-serif;
+}
+.quantityBtn {
+    color: #e34724;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+}
+.quantityBtn:hover {
+    color: #e34724;
+}
+.cardFooterItemCount {
+    background-color: #fff;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+.cardFooterItemCount .addToCart {
+    background-color: #bf9b77;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    border: 1px solid #bf9b77;
+    border-radius: 0.3rem;
+    width: 8rem;
+    margin: 0px;
+    transition: 0.15s;
+}
+.cardFooterItemCount .addToCart:hover {
+    background-color: #e34724;
+    color: #fff;
+    border-color: #e34724;
+}
+
+/* button {
     background-color: #d0e2d9;
     color:#0b0c0c;
     margin: 1vw;
@@ -7,4 +45,4 @@ button {
 }
     span{
     color: #030303;
-} 
+}  */

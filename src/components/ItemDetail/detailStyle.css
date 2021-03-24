@@ -1,2 +1,47 @@
+.cardItemDetail {
+    color: #532e1c;
+}
+.cardItemDetail img {
+    width: 100%;
+}
+.cardItemDetail .card-body {
+    display: grid;
+    align-items: center;
+    font-family: 'Quicksand', sans-serif;
+    text-align: left;
+    padding: 0px;
+}
+.cardItemDetail .card-body h5 {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.cardItemDetail .card-body p {
+    font-size: 1rem;
+}
+.cardItemDetail .card-body .itemPrice {
+    font-weight: bold;
+}
+.cardItemDetail a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+.cardItemDetail a .goToCart {
+    background-color: #bf9b77;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    border: 1px solid #bf9b77;
+    border-radius: 0.3rem;
+    width: 8.5rem;
+    margin: 0px;
+    transition: 0.15s;
+}
+.cardItemDetail a .goToCart:hover {
+    background-color: #e34724;
+    color: #fff;
+    border-color: #e34724;
+}
 
 

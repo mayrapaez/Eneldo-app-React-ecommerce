@@ -1,3 +1,16 @@
-.Nav {
+.navbar {
   padding-right: 55px;
+  margin-bottom: 5px;
+  background-color: #f35b357e;
+  font-family: 'Lucida Sans', sans-serif;
+}
+.navbar a {
+  color: rgb(3, 3, 3);
+  padding-right: 125px;
+  font-size: 25px;
+}
+
+.btn-outline-info {
+  color: #ec0f22af;
+  border-color: #ec0f22af;
 }

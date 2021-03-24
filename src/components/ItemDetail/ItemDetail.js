@@ -1,30 +1,47 @@
-import ItemCount from "../ItemCount/ItemCountDos";
-import swal from "sweetalert";
-import { Link } from "react-router-dom";
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import './detailStyle,css';
+import ItemCount from '../../components/ItemCount/ItemCountDos';
+import { useCartContext } from '../../context/CartContext';
 
-import React, {useState, useEffect} from 'react';
+const ItemDetail = ({ item }) => {
+    const [goToCart, setGoToCart] = useState(false);
 
-const ItemDetailComponent = ({ product }) => {
-    const [AddToCart, setAddToCart] = useState(false);
-  const onAdd = () => {
-    swal("Producto agregado exitosamente");
-    setAddToCart(true);
-  };
+    const { addItem } = useCartContext();
 
-  return (
-    <div className="cardDetail">
-      <div key={product.id}>
-        <h3>{product.name}</h3>
-      </div>
-      <div className="descripcion">
-        <p>{product.detail}</p>
-        <span>${product.price}</span>
-        <div>
-          {AddToCart ? <Link to={`/Cart`}>VER CARRITO DE COMPRAS</Link> : <ItemCount stock={product.stock} initial={0} onAdd={onAdd} />}
+    const onAdd = (evt, quantity) => {
+        evt.stopPropagation();
+
+        addItem(item, quantity);
+
+        setGoToCart(true);
+        addCart({item, cantidad: quantity,}, quantity)
+    };
+
+    return (
+        <div className="container-fluid mx-0 my-5 px-5">
+            <div className="card cardItemDetail p-sm-3">
+                <div className="row no-gutters">
+                    <div className="col-md-4">
+                        <img src={item.image} alt={item.name}/>
+                    </div>
+                    <div className="col-md-8 card-body mt-4" key={item.id}>
+                        <h5 className="card-title">{item.name}</h5>
+                        <p className="card-text">{item.detail}</p>
+                        <p className="card-text productPrice">${item.price}</p>
+                        {goToCart ?
+                            <div>   
+                            <Link to={`/carrito`}><button type="button" className="btn shadow-sm mainBtn goToCart">Ver carrito</button></Link>
+                            <Link to={`/`}><button type="button" className="btn shadow-sm mainBtn goToCart">Seguir Comprando</button></Link>
+                            </div>
+                            : <ItemCount inicial={1} stock={product.stock} onAdd={onAdd}/>
+                        }
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  );
+    );
 };
 
-export default ItemDetailComponent;
+export default ItemDetail;
+

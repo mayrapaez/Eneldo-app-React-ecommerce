@@ -1,0 +1,106 @@
+#cartContainer {
+    font-family: 'Quicksand', sans-serif;
+}
+#cartContainer .cartDetailHeader {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    color: #532e1c;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    border-bottom: 1px solid #bf9b77;
+}
+#cartContainer .cartDetailItems {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    color: #532e1c;
+    text-align: center;
+    align-items: baseline;
+}
+#cartContainer .cartDetailItems img {
+    width: 80px;
+    height: 80px;
+}
+#cartContainer .cartDetailItems .removeItemIcon {
+    color: #e34724;
+    font-size: 20px;
+}
+#cartContainer #totalPriceContainer {
+    color: #532e1c;
+    display: flex;
+    justify-content: flex-end;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    border-top: 1px solid #bf9b77;
+}
+#cartContainer .cartButtonContainer {
+    display: flex;
+    justify-content: flex-end;
+}
+#cartContainer .cartButtonContainer .emptyCartButton {
+    color: #532e1c;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    border: 1px solid #532e1c;
+    border-radius: 0.3rem;
+    width: 10rem;
+    transition: 0.15s;
+}
+#cartContainer .cartButtonContainer .emptyCartButton:hover {
+    background-color: #532e1c;
+    color: #fff;
+}
+#cartContainer .cartButtonContainer .continueButton {
+    background-color: #bf9b77;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    border: 1px solid #bf9b77;
+    border-radius: 0.3rem;
+    width: 10rem;
+    transition: 0.15s;
+}
+#cartContainer .cartButtonContainer .continueButton:hover {
+    background-color: #e34724;
+    color: #fff;
+    border-color: #e34724;
+}
+#cartContainer .emptyCart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+#cartContainer .emptyCart img {
+    width: 350px;
+}
+#cartContainer .emptyCart div {
+    align-self: center;
+    text-align: center;
+}
+#cartContainer .emptyCart div p {
+    color: #e34724;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0px;
+}
+#cartContainer .emptyCart div .goToProducts {
+    display: flex;
+    color: #532e1c;
+    text-transform: uppercase;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    transition: 0.15s;
+}
+#cartContainer .emptyCart div .goToProducts .chevron {
+    font-size: 12px;
+}
+#cartContainer .emptyCart div .goToProducts:hover {
+    color: #0091a1;
+    letter-spacing: 0.03rem;
+}
