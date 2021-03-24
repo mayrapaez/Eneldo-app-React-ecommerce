@@ -1,71 +1,28 @@
-# Getting Started with Create React App
+Proyecto Final para la cursada de ReactJs en Coderhouse
+Este proyecto fue desarrollado como ejercitación de los conceptos vistos en clase durante la cursada online de ReactJs en Coderhouse.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+De qué se trata el proyecto
+Este proyecto es la simulación de un ecommerce, en este caso, la tienda de una dietetica.
 
-## Available Scripts
+Qué funcionalidades tiene el proyecto
+La aplicación se extiende sólo del lado del cliente, es decir, sólo cuenta con el Frontend del desarrollo.
 
-In the project directory, you can run:
+Integración con Firestore
+La aplicación está integrada a Cloud Firestore, un servicio de base de datos de Firebase (Google). Este servicio permite almacenar datos, tales como un listado de productos y sus características, y pedir esos datos desde la aplicación.
 
-### `npm start`
+React-router-dom
+React-dom es utilizado en la aplicación para crear rutas de navegación dinámicas.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+General
+El usuario recibe una landing con un catálogo de productos, cada uno con un enlace para ver su detalle. Además, tiene la posibilidad de navegar hacia distintas categorías desde la barra de navegación, las cuales filtrarán los productos mostrados en pantalla por la categoría respectiva. Una vez en el detalle, el usuario podrá seleccionar una cantidad de ese producto para añadir al carrito, limitado por un stock. Una vez agregado, podrá seguir su compra o terminarla. En caso de seguir será redirigido al catálogo, y en caso de terminar, al carrito. En el carrito verá los productos agregados con sus cantidades, subtotales y el valor total de la compra. Tendrá la opción de quitar productos por tipo y de vaciar el carrito completo. Por último, tendrá la opción de comprar. Al decidirse por comprar se le pedirá que complete unos datos, tras lo cual se generará su orden y se le dará un número de orden.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Cómo descargar e instalar este proyecto:
+1) Descargar el repositorio
+Ir a "Code" (botón verde) -> "Descargar ZIP".
 
-### `npm test`
+2) Descomprimir la carpeta en el directorio deseado
+3) Abrir la consola para instalar dependencias
+Hacer click en la barra de dirección de la carpeta del repositorio, escribir "cmd" y dar Enter. La consola se abrirá ya ubicada en el directorio correcto. Escribir en la consola "npm i" y dar Enter. Esto hará que npm lea el archivo "package.json" del directorio y descargue las dependencias utilizadas en el proyecto.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-"# enaldo-app" 
+4) Correr el proyecto
+Ahora ya podés iniciar el entonrno de trabajo. En la consola, situado en el directorio del proyecto, ingresar "npm start", Enter, y esperar a que npm abra la aplicación en el navegador. Asegurate de tener un editor de código para trabajar sobre el proyecto (por ejemplo: Visual Studio Code).
